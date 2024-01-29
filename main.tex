@@ -1,0 +1,282 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{makecell}
+\usepackage[link=off]{phonenumbers}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\usepackage[margin=0.3in]{geometry}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.0in}
+\addtolength{\evensidemargin}{-0.0in}
+\addtolength{\textwidth}{0in}
+\addtolength{\topmargin}{10pt}
+\addtolength{\textheight}{0.0in}
+
+\urlstyle{same}
+
+\usepackage{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!50!red,
+    linkbordercolor=red,
+    urlcolor=blue!70!black
+}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+    \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+\def \ifempty#1{\def\temp{#1} \ifx\temp\empty }
+
+\newcommand{\resumeItem}[2]{
+    \item\small{
+        \ifempty{#1}#2\else\textbf{#1}{: #2 \vspace{-2pt}}\fi
+    }
+}
+
+\usepackage[dvipsnames]{xcolor}
+\definecolor{mygray}{gray}{0}
+\usepackage{fancybox}
+
+\usepackage{lmodern}
+\usepackage{tikz}
+
+\tikzset{rndblock/.style={rounded corners,rectangle,draw,outer sep=0pt}}
+
+\newcommand{\tframed}[2][]{\tikz[baseline=(h.base)]\node[rndblock,#1] (h) {\color{black}{#2}};}
+
+\newcommand*{\mystrut}{\rule[-0.2\baselineskip]{0pt}{0.8\baselineskip}}
+\newcommand{\skill}[1]{\tframed[lightgray]{\mystrut#1}}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-1pt}\item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{#3} & \textcolor{mygray}{#2} \\
+            \textit{\small#1} & \textcolor{mygray}{\textit{\small #4}} \\
+        \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeExpSubheading}[5]{
+    \vspace{-1pt}\item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{#1}  & \textcolor{mygray}{#2} \\
+            \textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
+            {\scriptsize#5}
+        \end{tabular*}\vspace{3pt}
+}
+
+\newcommand{\resumeProjSubheading}[4]{
+    \vspace{-1pt}\item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{#1}  & \textcolor{mygray}{#2} \\
+            \scriptsize {#3} & \textcolor{mygray}{\textit{\small #4}} \\
+        \end{tabular*}\vspace{3pt}
+}
+
+\newcommand{\resumeProjSubheadingo}[4]{
+    \vspace{-1pt}\item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{#1}  & \textcolor{mygray}{#2} \\
+        \end{tabular*}
+}
+
+\newcommand{\resumeVolunteer}[2]{
+    \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            #1 & \textit{\small #2} \\
+        \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\usepackage{changepage}
+\newcommand{\resumeDesc}[1]{\begin{adjustwidth}{5pt}{0pt}\vspace{-2pt}{\small{#1}}\end{adjustwidth}}
+
+
+
+
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\Large Maria Okorochkova} & St.\hspace{0.5ex}Petersburg, Russia\\
+    Email: \href{mailto:okorochkova02@gmail.com}{okorochkova26@gmail.com} & GitHub:     \href{https://www.github.com/maladetska}{maladetska}\\
+    Telegram: \href{https://t.me/maladetska}{@maladetska}\\
+    Mobile: +7(961)624-24-62
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {National Research \textbf{ITMO} University}{}
+            {Bachelor of Science in Applied Mathematics and Computer Science}{Sep. 2021 - Present}{\vspace{5pt}\newline\footnotesize{\textbf{Relevant coursework: }Calculus, Algorithms and Data Structures, Discrete Mathematics, Java, C++}}
+        \resumeSubheading
+            {National Research \textbf{ITMO} University}{}
+            {Bachelor of Science in Information Systems and Technologies}{Sep. 2020 - Aug. 2021}{\vspace{5pt}\newline\footnotesize{\textbf{Relevant coursework: }Algorithms and Data Structures, Discrete Mathematics, C, C++}}
+        \resumeSubheading
+            {Correspondence School of Physics and Technology of \textbf{MIPT}}{}
+            {Student}{Sep. 2018 - Jun. 2020}{\vspace{5pt}\newline\footnotesize{\textbf{Relevant coursework: }Mathematics, Informatics}}
+    \resumeSubHeadingListEnd
+
+
+% %-----------EXPERIENCE-----------------
+\vspace{0.005pt}
+\vspace{-1pt}
+\section{Experience}
+    \resumeSubHeadingListStart
+        \resumeExpSubheading
+            {Software Engineer Intern}{}
+            {Tinkoff · Tinkoff Origination Platform}{Jul. 2023 - Oct. 2023}
+            {\skill{\textbf{Kotlin}} \skill{\textbf{Spring Boot}} \skill{\textbf{Apache Kafka}} \skill{\textbf{Camunda}} \skill{\textbf{PostgreSQL}}}
+            \resumeDesc{
+            \begin{itemize}
+                \item Design and development of a push\&prospects service for use of the Tinkoff's business analysts
+                \item Design and development a web application for uploading, validating and verifying documents, which is now used as the internal scan-document tool.
+                \item Writing integration and unit tests.
+            \end{itemize}}
+        \resumeExpSubheading
+            {Software Engineer Student}{}
+            {Yandex Summer Backend School}{Jun. 2023 - Jul. 2023}
+            {\skill{\textbf{C++}} \skill{\textbf{Userver}} \skill{\textbf{PostgreSQL}} \skill{\textbf{Google Test}} \skill{\textbf{Pytest}} \skill{\textbf{CI/CD}}}
+            \resumeDesc{
+            \begin{itemize}
+                \item Summer school to gain knowledge about the backend of distributed high-load services. 
+                \item The topics studied were: code architecture, backend basics, git, http api design, databases, multithreading, testing, load testing, devops, deployment, CI/CD, etc.
+                \item Solved practical assignments, code review
+                % \item There were also training sessions on \textbf{algorithms and data structures} every week.
+            \end{itemize}}
+  \resumeSubHeadingListEnd
+
+
+% %-----------PROJECTS-----------------
+\vspace{0.005pt}
+\vspace{-1pt}
+
+\section{Selected Projects}
+    \resumeSubHeadingListStart
+        \vspace{-1pt}
+        
+        \resumeProjSubheading
+                {\href{https://github.com/maladetska/TapeSorter}{Tape Type Data Sorter}}{\textit{Feb. 2023}}
+                {\skill{\textbf{C++}} \skill{\textbf{OOP}} \skill{\textbf{Memory work}}}{}
+                \resumeDesc{
+                    Console application for sorting large {\href{https://github.com/maladetska/TapeSorter/blob/main/lib/tape.h}{Tape}} (data structure) in external memory --  development {\href{https://github.com/maladetska/TapeSorter/blob/main/lib/tape_sorter.cpp}{Tape Sorter}}.
+                }
+        \resumeProjSubheading
+            {Implementation Of Codeforces'S Clone}{\textit{Dec. 2022}}
+            {\skill{\textbf{Java}}
+            \skill{\textbf{Spring Boot}}
+            \skill{\textbf{MariaDB}} \skill{\textbf{REST}}
+            \skill{\textbf{JavaScript}}
+            \skill{\textbf{Vue.js}}}{}
+            \resumeDesc{
+                Development of a web app similar to {\href{https://codeforces.com/}{Codeforces}} with basic features:  \\ registration, identification, writing comments, publishing posts, storing data of each user.
+            }
+        \resumeProjSubheading
+            {Arithmetic Parser}{\textit{May 2022}}
+            {\skill{\textbf{Java}} \skill{\textbf{OOP}} \skill{\textbf{Parsing}}} {}
+            \resumeDesc{
+                Parsing and calculation of arithmetic expressions.
+            }
+        % \resumeProjSubheading
+        %   {PNG TO PNM CONVERTER}{\textit{Apr. 2022}}
+        %   {\skill{\textbf{C}} \skill{\textbf{ZLIB}} \skill{\textbf{LIBDEFLATE}} \skill{\textbf{Decoding}}} {}
+        %       \resumeDesc{
+        %           Decoding a PNG image into {\href{https://netpbm.sourceforge.net/doc/}{PNM}} for {\href{https://www.zlib.net/}{ZLIB}} or {\href{https://github.com/ebiggers/libdeflate}{LIBDEFLATE.}}
+        %       }
+         % \resumeProjSubheading
+         %  {RUBIK'S CUBE GRAPHICAL USER INTERFACE}{\textit{Jun. 2021}}
+         %  {\skill{\textbf{C++}} \skill {\textbf{OOP}} \skill {\textbf{GLUT}}}{}
+         %      \resumeDesc{
+         %       Implementation of a program simulating the assembly of a 3x3 Rubik's Cube \\ + using application GUI Implementation ({\href{https://www.opengl.org/resources/libraries/glut/}{OpenGL Utility Toolkit}}).
+         %      }
+    \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\vspace{-1pt}
+
+\section{Programming Skills}
+        \resumeSubHeadingListStart
+            \begin{tabular}{ll}
+                \textbf{Languages:} \qquad\qquad\,\,\,\,\,\,\,\,\,\, \textbf{(experienced)}: Kotlin/Java, C++; \textbf{(familiar)}: JavaScript, Python,  Swift, Go, Swift, C. \\
+                \textbf{Frameworks \& Tools:} \quad Spring Boot, Gradle, Camunda, Docker, Kubernetes, PostgreSQL, Git, Grafana, Prometheus, Bash.
+                % \textbf{Languages:} \qquad\qquad\,\,\,\,\,\,\,\,\,\, C++, Java. \\
+                % \textbf{Languages, familiar:} \quad\, C, JavaScript, Clojure, Prolog, {\href{https://en.wikipedia.org/wiki/Verilog}{Verilog}}, Python. \\
+                % \textbf{Frameworks \& Tools:} \quad Bash, Git, Spring, Vue.js, SQL. \\
+                % \textbf{Technologies:} \qquad\qquad\,\,\,\, AJAX, REST.
+            \end{tabular}
+        \resumeSubHeadingListEnd
+
+
+%--------ACHIEVEMENTS------------
+\vspace{-1pt}
+
+\section{Achievements}
+    \resumeSubHeadingListStart
+        \begin{tabular}{ll}
+            \textbf{Prize-winner}, \quad Mathematical Olympiad `Phystech` held by MIPT (\textbf{2nd prize} among 2000+ finalist) & \quad\quad\quad\quad\quad\quad\quad\quad \textit{\small 2020}\\
+            \textbf{Winner},\quad\quad\quad\quad Mathematical Olympiad held by Financial University (\textbf{top 25} among 580+ finalists) & \quad\quad\quad\quad\quad\quad\quad\quad \textit{\small 2020} 
+        \end{tabular}
+    \resumeSubHeadingListEnd
+
+
+%--------TEACHING EXPERIENCE------------
+\vspace{0.005pt}
+\vspace{-1pt}
+
+\section{Teaching Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {ITMO University, Information Technologies and Programming Faculty}{}
+            {Mentor of \textbf{Calculus} for first-year students}{Sep. 2021 - Sep. 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------LANGUAGES----------------
+% \vspace{-1pt}
+
+% \section{Languages}
+%     \resumeSubHeadingListStart
+%         \begin{tabular}{ll}
+%             \textbf{English}, Upper-Intermediate; \\
+%             \textbf{French}, Intermediate.
+%         \end{tabular}
+%     \resumeSubHeadingListEnd
+  
+\end{document}
